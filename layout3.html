@@ -42,12 +42,27 @@ main {
 }
 .container {
     display: flex;
+    flex-direction: column;
+}
+.container1 {
+    display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 768px) {
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
     </style>
+
+
 </head>
 <body>
-
+<div class="container">
     <header>
         <h1>HEADER</h1>
     </header>
@@ -55,8 +70,9 @@ main {
     <nav>
         <h1>NAVIGATION</h1>
     </nav>
+</div>
 
-    <div class="container">
+<div class="container1">
     <main class="wews">
         <h1>SIDE CONTENT</h1>
         <p>REDHORSE</p>
@@ -73,8 +89,10 @@ main {
     </main>
 </div>
 
+<div class="container">
     <footer>
         <h1>FOOTER</h1>
     </footer>
+</div>
 </body>
 </html>

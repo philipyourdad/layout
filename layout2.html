@@ -6,12 +6,14 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
 header,
 nav,
 main,
 footer {
+    width: 100%;
     margin: 10px;
     padding: 20px;
     text-align: center;
@@ -37,34 +39,47 @@ main {
 .wew {
     float: left;
 }
-
 .container {
     display: flex;
+    flex-direction: column;
+}
+.container1 {
+    display: flex;
     justify-content: space-between;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>HEADER</h1>
-    </header>
-
-    <nav>
-        <h1>NAVIGATION</h1>
-    </nav>
-
     <div class="container">
-    <main class="wew">
-        <h1>CONTENT</h1>
-        <p>REDHORSE</p>
-    </main>
+        <header>
+            <h1>HEADER</h1>
+        </header>
 
-    <main class="wew">
-        <h1>CONTENT</h1>
-        <p>REDHORSE</p>
-    </main>
-</div>
+        <nav>
+            <h1>NAVIGATION</h1>
+        </nav>
+    </div>
+    <div class="container1">
+        <main class="wew">
+            <h1>CONTENT</h1>
+            <p>REDHORSE</p>
+        </main>
+
+        <main class="wew">
+            <h1>CONTENT</h1>
+            <p>REDHORSE</p>
+        </main>
+    </div>
 
     <footer>
         <h1>FOOTER</h1>
