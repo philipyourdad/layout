@@ -40,48 +40,65 @@
             width: 45%;
             height: 58vh;
         }
-
+        .wew2{
+            float: left;
+        }
         .wew1,
         .wew2 {
-            width: 44.5%;
-            height:250px;
+            width: 40%;
+            float: left;
+            height: 250px;
         }
 
         .wew3 {
+            clear: both;
             width: 100%;
-            height:250px;
+            height: 250px;
         }
+
         .container1 {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container1 {
+                flex-direction: row;
+            }
+            .wew1,
+            .wew2,
+            .wew3 {
+                width: 50%;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-<header>
-    <h1>HEADER</h1>
-</header>
+<div class="container">
+    <header>
+        <h1>HEADER</h1>
+    </header>
 
-<nav>
-    <h1>NAVIGATION</h1>
-</nav>
-<main class="wew">
-    <h1>CONTENT</h1>
-    <p>REDHORSE</p>
-</main>
+    <nav>
+        <h1>NAVIGATION</h1>
+    </nav>
+
+    <main class="wew">
+        <h1>CONTENT</h1>
+        <p>REDHORSE</p>
+    </main>
 </div>
 
 <div class="container1">
-    
-    <main class="wew2">
+    <main class="wew1">
         <h1>SIDE CONTENT1</h1>
         <p>REDHORSE</p>
     </main>
 
-    <main class="wew1">
+    <main class="wew2">
         <h1>SIDE CONTENT2</h1>
         <p>REDHORSE</p>
     </main>
